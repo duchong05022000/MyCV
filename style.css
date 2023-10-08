@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+.container .left-side{
+    background-color: #d5d5d5;
+    padding: 40px;
+}
+.container .right-side{
+    background-color: white;
+    padding: 40px;
+   
+}
+.profile-text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+.profile-text .my-img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.profile-text .my-img img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.contact-info{
+    padding-top: 40px;
+}
+.tile{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contact-info ul{
+    position: relative;
+}
+.contact-info ul li{
+    position: relative;
+    list-style-type: none;
+    margin: 2px;
+}
+ .percent{
+    position: relative;
+   display: grid; 
+   grid-template-columns: 90% 10%;
+    height: 20px;
+
+}
+.percent .a{
+    background-color: red;
+    height: 15px;
+   
+}
+.percent .b{
+    background-color: blue;
+    height: 15px;
+   
+}
+.about.skills .box{
+    position: relative;
+   display: grid; 
+   grid-template-columns: 60px 200px;
+    height: 20px;
+    padding-top: 20px;
+
+}
+.about.skills .title2 {
+    padding: 30px;
+}
+@media (max-width:1000px) {
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
